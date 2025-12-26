@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67F39D9E-60A3-4BBA-A5D6-69A5A5E378B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BANK_WITH_C_</RootNamespace>
+    <AssemblyName>BANK WITH C#</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddClients.Designer.cs">
+      <DependentUpon>frmAddClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeposit.Designer.cs">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindAndDeleteClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindAndDeleteClient.Designer.cs">
+      <DependentUpon>frmFindAndDeleteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfer.Designer.cs">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowClients.Designer.cs">
+      <DependentUpon>frmShowClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateClients.Designer.cs">
+      <DependentUpon>frmUpdateClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransaction.Designer.cs">
+      <DependentUpon>frmTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateUsers.Designer.cs">
+      <DependentUpon>frmUpdateUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdraw.Designer.cs">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddClients.resx">
+      <DependentUpon>frmAddClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeposit.resx">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindAndDeleteClient.resx">
+      <DependentUpon>frmFindAndDeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfer.resx">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowClients.resx">
+      <DependentUpon>frmShowClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateClients.resx">
+      <DependentUpon>frmUpdateClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransaction.resx">
+      <DependentUpon>frmTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateUsers.resx">
+      <DependentUpon>frmUpdateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdraw.resx">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2202_w023_n001_1817b_p1_1817.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ORFI0A0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resume-de-conception-de-fond-avec-des-lignes-fluides.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image showing core banking systems connections _ Premium AI-generated image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4882066.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="views.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="find_in_document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="public_company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sign_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="login_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond-de-mur-de-texture-beton-bleu-grunge-vintage-avec-vignette.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trading Forex_ How does Forex Trading Work_ Let%27s Dive In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digital Financial Investment Diagram In Blue 3d Render, Forex Chart, Forex, Forex Background Background Image And Wallpaper for Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Télécharger Concept de l%27IA gratuitement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trading Forex_ How does Forex Trading Work_ Let%27s Dive In1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bleu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baixar fundo de tecnologia futurista de vetor, placa-mãe eletrônica, conceito de comunicação e engenharia gratuitamente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suitable for any bank or money app.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banco De Vector Icono PNG ,dibujos  Clipart De Banco, Iconos De Banco, Banco PNG y Vector para Descargar Gratis _ Pngtree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download full HD in my link below.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baixar fundo de tecnologia futurista de vetor, placa-mãe eletrônica, conceito de comunicação e engenharia gratuitamente1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo azul abstrato com linhas lisas e brilhantes _ imagem Premium gerada com IA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Télécharger Modèle abstrait fond prime de luxe bleu foncé avec lignes de lumière motif or et triangles de luxe gratuitement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baixar fundo de tecnologia futurista de vetor, placa-mãe eletrônica, conceito de comunicação e engenharia gratuitamente2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D illustrations for Asia Alliance Bank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond-de-mur-de-texture-beton-bleu-grunge-vintage-avec-vignette1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTG BANK _ 1º Phase __ Behance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b6287df-3ec9-48c0-85eb-873b7761cef7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download full HD in my link below1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4e145dbb-0869-4e16-8243-d761b7c2c2d2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="8c9df31c-26b9-4869-9867-a5056cc857a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6f5cbe00-de8e-46ea-8e51-656248bcd71f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="82195200-d8c1-4e12-893a-f446b3ad1484.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient_boy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\withdrawal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankingBusiness\BankingBusiness.csproj">
+      <Project>{010bacf7-1fd9-4039-b701-3931e31d69c1}</Project>
+      <Name>BankingBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankingDataAccess\BankingDataAccess.csproj">
+      <Project>{e794f6f5-6c46-4cad-8762-40d50e91e931}</Project>
+      <Name>BankingDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
