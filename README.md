@@ -6,7 +6,7 @@ This project demonstrates strong foundations in **Object-Oriented Programming**,
 
 ---
 
-## 🚀 Features
+## 🚀 Features 
 
 - User authentication (Admin / User)
 - Client management (Add, update, delete clients)
