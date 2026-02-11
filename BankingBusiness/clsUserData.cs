@@ -122,7 +122,7 @@ public static class clsUserData
         }
     }
 
-    // ... rest of your methods ...
+
 
 
     // Optional: Add a method to get user by ID for permission checking
@@ -176,7 +176,7 @@ public static class clsUserData
         return user;
     }
 
-    // ... [rest of your existing methods] ...
+
 
     public static bool IsUsernameExists(string username, int excludeUserID = 0)
     {
