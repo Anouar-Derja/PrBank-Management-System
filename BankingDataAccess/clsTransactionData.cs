@@ -200,7 +200,7 @@ namespace Banking_DataAccess
                 {
                     string query = @"SELECT bt.*, tt.TypeName 
                  FROM BankTransaction bt
-                 INNER JOIN TransactionTypes tt ON bt.TransactionTypeID = tt.TransactionTypeID
+                 INNER JOIN TransactionType tt ON bt.TransactionTypeID = tt.TransactionTypeID
                  WHERE bt.TransactionID = @TransactionID";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -235,7 +235,7 @@ namespace Banking_DataAccess
 
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-                    string query = "SELECT * FROM TransactionTypes WHERE TransactionTypeID = @TransactionTypeID";
+                    string query = "SELECT * FROM TransactionType WHERE TransactionTypeID = @TransactionTypeID";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -270,7 +270,7 @@ namespace Banking_DataAccess
 
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-                    string query = "SELECT * FROM TransactionTypes ORDER BY TypeName";
+                    string query = "SELECT * FROM TransactionType ORDER BY TypeName";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -301,7 +301,7 @@ namespace Banking_DataAccess
 
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
                 {
-                    string query = @"INSERT INTO TransactionTypes (TypeName, Description)
+                    string query = @"INSERT INTO TransactionType (TypeName, Description)
                  VALUES (@TypeName, @Description);
                  SELECT SCOPE_IDENTITY();";
 
@@ -341,7 +341,7 @@ namespace Banking_DataAccess
                  bt.Amount, bt.BalanceAfter, bt.TransactionDate, 
                  bt.Description, bt.FromAccount, bt.ToAccount, bt.UserID
                  FROM BankTransaction bt
-                 INNER JOIN TransactionTypes tt ON bt.TransactionTypeID = tt.TransactionTypeID
+                 INNER JOIN TransactionType tt ON bt.TransactionTypeID = tt.TransactionTypeID
                  ORDER BY bt.TransactionDate DESC";
 
                     using (SqlCommand command = new SqlCommand(query, connection))

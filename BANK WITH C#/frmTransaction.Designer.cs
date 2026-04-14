@@ -110,6 +110,7 @@
             this.dvgTransaction.Size = new System.Drawing.Size(1053, 269);
             this.dvgTransaction.TabIndex = 3;
             this.dvgTransaction.TabStop = false;
+            this.dvgTransaction.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgTransaction_CellContentClick);
             // 
             // label4
             // 

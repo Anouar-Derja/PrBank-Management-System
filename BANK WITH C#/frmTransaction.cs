@@ -219,5 +219,9 @@ namespace BANK_WITH_C_
             }
         }
 
+        private void dvgTransaction_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

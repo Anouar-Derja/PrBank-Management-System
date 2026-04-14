@@ -57,13 +57,14 @@ namespace Banking_DataAccess
             using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
             {
                 // First, test without the Users table join
-                string query = @"SELECT bt.TransactionID, tt.TypeName, bt.Amount, 
-                                bt.BalanceAfter, bt.TransactionDate, bt.Description,
-                                bt.FromAccount, bt.ToAccount, bt.UserID
+                string query = @"
+                         SELECT bt.TransactionID, tt.TypeName, bt.Amount,
+                         bt.BalanceAfter, bt.TransactionDate, bt.Description,
+                          bt.FromAccount, bt.ToAccount, bt.UserID
                          FROM BankTransaction bt
-                         INNER JOIN TransactionTypes tt ON bt.TransactionTypeID = tt.TransactionTypeID
+                         INNER JOIN TransactionType tt
+                         ON bt.TransactionTypeID = tt.TransactionTypeID
                          ORDER BY bt.TransactionDate DESC";
-
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     try
