@@ -45,43 +45,6 @@ This separation improves:
 
 ---
 
-## 📸 Screenshots
+## 🎥 Demo Video
 
-### 🔐 Login
-![Login](screenshots/Login.png)
-
-### 🏠 Main Menu
-![Main Menu](screenshots/MainMenu.png)
-
-### 👤 Add Client
-![Add Client](screenshots/AddClient.png)
-
-### 📋 Show Clients
-![Show Client](screenshots/ShowClient.png)
-
-### ✏️ Update Client
-![Update Client](screenshots/UpdateClient.png)
-
-### 🔍 Find & Delete Client
-![Find and Delete](screenshots/FindAndDelete.png)
-
-### 💰 Deposit
-![Deposit](screenshots/Deposit.png)
-
-### 💸 Withdraw
-![Withdraw](screenshots/Withdraw.png)
-
-### 🔁 Transfer
-![Transfer](screenshots/Transfer.png)
-
-### 📑 Transactions History
-![Transaction](screenshots/Transaction.png)
-
-### 👮 User Management
-![Manage User](screenshots/ManageUser.png)
-
-### 🔐 Update User
-![Update User](screenshots/UpdateUser.png)
-
-### 🗄️ Database Structure
-![Database](screenshots/Database.png)
+▶️ [Watch Bank Management System Demo]([PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/1jP9pSTOqgYixNifhjteM3TjjrlcW6mTU/view?usp=sharing))
