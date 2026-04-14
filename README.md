@@ -47,4 +47,4 @@ This separation improves:
 
 ## 🎥 Demo Video
 
-▶️ [Watch Bank Management System Demo]([PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/1jP9pSTOqgYixNifhjteM3TjjrlcW6mTU/view?usp=sharing))
+▶️ [Watch Bank Management System Demo]((https://drive.google.com/file/d/1jP9pSTOqgYixNifhjteM3TjjrlcW6mTU/view?usp=sharing))
